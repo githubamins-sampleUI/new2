@@ -6,25 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.core.widget.NestedScrollView
+
+    <FrameLayout
         android:id="@+id/framelayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/back_of_homebtn"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="60dp"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
-        android:background="@android:color/white"
+        android:background="#425C5A"
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
@@ -32,7 +33,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white"
+            android:background="@android:color/transparent"
             android:padding="15dp"
             android:src="@drawable/ic_user" />
 
@@ -41,7 +42,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white"
+            android:background="@android:color/transparent"
             android:padding="15dp"
             android:src="@drawable/ic_sell" />
 
@@ -49,7 +50,7 @@
             android:layout_width="100dp"
             android:layout_height="3dp"
             android:layout_gravity="bottom"
-            android:backgroundTint="#FDD835"
+            android:backgroundTint="#FFCEA2"
             android:layout_marginBottom="5dp"
             android:background="#ddd" />
 
@@ -58,7 +59,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white"
+            android:background="@android:color/transparent"
             android:padding="15dp"
             android:src="@drawable/ic_filter" />
 
@@ -67,7 +68,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@android:color/white"
+            android:background="@android:color/transparent"
             android:padding="15dp"
             android:src="@drawable/ic_home_run" />
     </LinearLayout>
@@ -103,7 +104,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="43dp"/>
+        android:layout_marginBottom="43dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

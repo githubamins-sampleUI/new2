@@ -21,7 +21,7 @@ public class FirstFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.sample,container,false);
+        View view = inflater.inflate(R.layout.pppp,container,false);
         return view;
     }
 }
